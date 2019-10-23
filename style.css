@@ -87,3 +87,16 @@ font-family:Arial;
   width:375px;
   font-size:40px;
 }
+
+#overlayText {
+ position:absolute;
+  top:30%;
+  left:20%;
+  z-index:1;
+}
+
+#topText {
+  color: white;
+  font-size: 20px;
+  align-self: center;
+}
