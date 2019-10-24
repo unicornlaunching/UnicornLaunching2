@@ -1,5 +1,7 @@
 <html>
 <head>
+	
+	
 <style>
 
 body{ display : block; margin : 0px; }
@@ -12,41 +14,48 @@ body{ display : block; margin : 0px; }
 	border: 0;
 	}
 
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-
-a, a:hover {
-	text-decoration: none;
+.contact_us{
+    background: url("../Img/maps.jpg") no-repeat center center fixed;
+    -webkit-background: cover;
+    -moz-background: cover;
+    -o-background: cover;
+    background: cover;
+    min-height: 300px;
+    color: #FFF;
+    font-family: sans-serif;
+    
 }
-
-.socialbtns, .socialbtns ul, .socialbtns li {
-  margin: 0;
-  padding: 5px;
+.contact_us .content{
+    background-color: rgba(2,2,2,.9);
+    padding: 30px;
 }
-
-.socialbtns li {
-    list-style: none outside none;
-    display: inline-block;
+.contact_us .content h4{
+    margin-bottom: 30px;
 }
-
-.socialbtns .fa {
-	width: 40px;
-    height: 28px;
-	color: #000;
-	background-color: #FFF;
-	border: 1px solid #000;
-	padding-top: 12px;
-	border-radius: 22px;
-	-moz-border-radius: 22px;
-	-webkit-border-radius: 22px;
-	-o-border-radius: 22px;
+.contact_us .content .form-control {
+    background-color: rgba(82,78,78,.07);
+    color: #FFF;
+    border: none;
+    
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
-
-.socialbtns .fa:hover {
-	color: #ffffff;
-	background-color: #000;
-	border: 1px solid #000;
+.contact_us .content .form-control.active{
+  -webkit-transform: scale(1.1, 1.1);
+  -moztransform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
-
+.contact_us .content textarea{
+    height: 108px;
+    outline:none;
+}
+.contact_us .content .btn-danger {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 	
 	
 </style>
@@ -68,18 +77,48 @@ a, a:hover {
 	<div><img width = "100%" src="https://i.imgur.com/vKHnyDl.png"></div>  	
 		
 	<div><iframe width=100%" height="500" src="https://www.youtube.com/embed/uGajt6o8X7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>		
-		
 
-<div align="center" class="socialbtns">
-<ul>
-<li><a href="#" class="fa fa-lg fa-facebook"></a></li>
-<li><a href="#" class="fa fa-lg fa-twitter"></a></li>
-<li><a href="#" class="fa fa-lg fa-google-plus"></a></li>
-<li><a href="#" class="fa fa-lg fa-github"></a></li>
-<li><a href="#" class="fa fa-lg fa-pinterest"></a></li>
-<li><a href="#" class="fa fa-lg fa-linkedin"></a></li>
-<li><a href="#" class="fa fa-lg fa-instagram"></a></li>
-<li><a href="#" class="fa fa-lg fa-youtube"></a></li>
+		
+		
+		<div class="container">
+	<div class="row">
+			<h1>contact us</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">We'd love to hear from you!</h4>
+	</div>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn">Send Message</div>
+			</div>
+	</div>
+</div>
+
+		
 </ul>
 </div>
 
