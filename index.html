@@ -12,6 +12,13 @@ body{ display : block; margin : 0px; }
 	border: 0;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
+
+	
+.header, .footer {
+  grid-column: 1 / -1;
+  /* needed for the floated layout */
+  clear: both;
+}
 	
 </style>
 </head>
@@ -33,6 +40,7 @@ body{ display : block; margin : 0px; }
 		<div>content</div>
 		<div>content</div>
 		<div>content</div>
+			<div class = "footer">footer</div>
 </div>
 
 </body>
